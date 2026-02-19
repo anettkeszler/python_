@@ -31,6 +31,7 @@ flaws = None    # None type
 - **implicit data type conversion**: 
     - is automatical by Python's compiler to prevent data loss (int --> float). 
     - it only works if the data types are compatible (int - float). 
+    - similar termes in other languages: type inference, type coercion, type casting
 - **explicit data type conversion**: when implicit conversion throws a type error (TypeError)
     - int('55') --> 55
     - str(45) --> '45', it converts **any data type** into a string datatype
