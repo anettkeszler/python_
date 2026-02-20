@@ -7,7 +7,7 @@
     - **camelCase**: first letter is lowercase, and the first letter of every world after is uppercase with no space between words (myFirstName) 
     - **snake_case**: everything is lowercase, but use an underscore between words (my_first_name)
 - When creating a variable, python automatically assigns the datatype for you
-```
+```python
 name = "Leo"    # String
 age = 7         # Integer
 height = 5.6    # Float
@@ -44,5 +44,12 @@ flaws = None    # None type
     - ord() --> returns an integer representing the underlying unicode character 
     - hex() --> converts a given integer to a hexadecimal string 
     - oct() --> takes an integer and returns a string representing an oct to a number  
+```python
+print(10 == 10)     # True
+print(10 == 10.0)   # True - implicit type conversion - int and float
 
-  ![alt text](/screenshots/type_conversion.png)
+# when Python runs operations involving integers and floats, it implicitly converts the integers type to a float
+print(10 + 10.0)    # 20.0 
+
+print(type(10 + 10.0)) # <class 'float'> , implicit type conversion
+```
