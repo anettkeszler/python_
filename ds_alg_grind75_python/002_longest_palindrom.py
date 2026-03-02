@@ -18,13 +18,13 @@ Explanation: The longest palindrome that can be built is "a", whose length is 1.
 
 def longestPalindrom(input_string):
 
-    result = ""
-
+    counts = {}
     for char in input_string:
-        if input_string.count(char) % 2 == 0:
-            result += char
-    return len(result)+1
+        counts[char] = counts.get(char, 0) + 1
 
+    print(counts)
+
+   
 print(longestPalindrom("abccccdd")) # 7 (dccaccd)
 print(longestPalindrom("a")) # 1
 

@@ -40,8 +40,6 @@ print(isPalindrome(10))
 
 # Solution 2: reverse with sliceing function
 def isPalindrome_2(num:int):
-    if num < 0:
-        return False
     return str(num) == str(num)[::-1]
 
 print(isPalindrome_2(121))
