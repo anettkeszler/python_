@@ -4,8 +4,9 @@
 - **Programming** is a set of instructions in a programming language that the computer understands and performs a specific task. 
 - To manage the complexity of problems and the problem-solving process, computer scientists use **abstractions** to allow them to focus on the “big picture” without getting lost in the details.
 - By creating models of the problem domain, we are able to utilize a better and more efficient problem-solving process. These models allow us to describe the data that our algorithms will manipulate in a much more consistent way with respect to the problem itself.
-- **Data abstraction**: is a logical description of how we view the data and the operations that are allowed without regard to how they will be implemented. This means that we are concerned only with what the data is representing and not with how it will eventually be constructed. By providing this level of abstraction, we are creating an **encapsulation** around the data. The idea is that by encapsulating the details of the implementation, we are hiding them from the user’s view. This is called **information hiding**.
-- The user interacts with the interface, using the operations that have been specified by the abstract data type. The abstract data type is the shell that the user interacts with. The implementation is hidden one level deeper. The user is not concerned with the details of the implementation.
+- **Data abstraction**: For example, we do not necessarily know how the square root(math.sqrt()) is being calculated, but we know what function is called and how to use it. If we perform the import correctly, we can assume that the function will provide us with the correct results. We know that someone implemented a solution to the square root problem, but we only need to know how to use it.<br>
+By providing this level of abstraction, we are creating an **encapsulation** around the data. The idea is that by encapsulating the details of the implementation, we are hiding them from the user’s view. This is called **information hiding**.
+- **How abstract data types work**: The user interacts with the interface, using the operations that have been specified by the abstract data type. The abstract data type is the shell that the user interacts with. The implementation is hidden one level deeper. The user is not concerned with the details of the implementation.
 
 ### Python
 - was released in 1991 by Guido van Rossum
@@ -15,10 +16,10 @@
 - easy to learn and get started with
 - require less code in comparison to Java, so it makes developers very productive and allows projects to be completed more quickly 
 - "write less, do more" philosophy
-- object-oriented language, but can be procedural and functional (paradims)
-- **interpreted language**: when we run the script, it is first compiled and then interpreted/ executed line by line. The compilation part is mostly hidden from the user. While running the code, Python generates a byte code internally (Python interpreter - pyton code into byte code), this byte code is then converted using a python virtual machine(VM) to generate the output.  
-- we define **classes** to be a description of the data (which has attributes and behavior). 
-- data items are called **objects**, which is an instance of a class. 
+- object-oriented language, but can be procedural and functional (paradigms)
+- **interpreted language**: when we run the script, it is **first compiled and then interpreted/executed line by line**. The compilation part is mostly hidden from the user. While running the code, Python generates a byte code internally (Python interpreter - pyton code into byte code), this byte code is then converted using a python virtual machine(VM) to generate the output.  
+- we define **classes** as a description of the data (which has attributes and behavior). 
+- data items are called **objects**, which is an **instance of a class**. 
 
 ### Comments in Python code
 - Reasons of commenting: 

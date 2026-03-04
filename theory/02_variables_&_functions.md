@@ -3,6 +3,7 @@
 ### Variables
 - To create a variable you need to declare a name and assign it a value  
 - To change the value of a variable that has already been declared, you only need to reassign or redeclare it 
+- In general, the right-hand side of the assignment statement is evaluated and a reference to the resulting data object is assigned to the name on the left-hand side.
 - **Naming conventions**:
     - **camelCase**: first letter is lowercase, and the first letter of every world after is uppercase with no space between words (myFirstName) 
     - **snake_case**: everything is lowercase, but use an underscore between words (my_first_name)
@@ -14,9 +15,9 @@ height = 5.6    # Float
 is_cat = True   # Boolean
 flaws = None    # None type
 ```
-- You can declare multiple variables and assignt them to the same value (parallel assignment): <br>
+- You can declare multiple variables and assignt them to the same value (**parallel assignment**): <br>
 ``` a = b = c = 10```
-- You can declare multiple variables and assign them to multiple values (chained assignment):<br>
+- You can declare multiple variables and assign them to multiple values (**chained assignment**):<br>
 ```a, b, c = 1, 2, 3```
 - You can delete a variable: <br>
 ```del x```
