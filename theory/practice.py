@@ -1,55 +1,35 @@
-# Valid Palindrome
 
-def isPalindrome(input: str):
-    
-    """
-    Solution 1
-    alphanum_str=""
-    for char in input:
-        if char.isalnum():
-            alphanum_str += char
-    """
+# from till 10, starting from 0 to 9, 10 is excluded - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+range(10) 
 
-    """
-    Solution 2
-    alphanum_str = "".join(filter(str.isalnum, input))
-    """
+#from 5 to 10, 10 is excluded - [5, 6, 7, 8, 9]
+range(5, 10) 
 
-    """
-    Solution 3
-    """
+# from 5 till 10, 10 is excluded, step is 2 - [5, 7, 9]
+range(5, 10, 2) 
 
-    alphanum_str = "".join([char for char in input if char.isalnum()])
-    print(alphanum_str.lower())
+# from 10 till 1, 1 is excluded, backwards (step -1) - [10, 9, 8, 7, 6, 5, 4, 3, 2]
+range(10, 1, -1)
 
-    start = 0
-    end = len(alphanum_str)-1
+my_dict = {1: 'Coffee', 2: 'Tea', 3: 'Juice'}
 
-    while start < end:
-        if alphanum_str[start].lower() != alphanum_str[end].lower():
-            return False
-        start += 1
-        end -= 1
+for k in my_dict:
+    print(k, ":", my_dict[k])
 
-    return True
+print(2 in my_dict)
 
-print(isPalindrome("A man, a plan, a canal: Panama"))
+print(my_dict.keys()) 
+print(my_dict.values())
+print(my_dict.items())
 
-# Palindrome Number
-def isPalindrome(num):
-    #return str(num) == str(num)[::-1]
+print(list(my_dict.keys()))
+print(list(my_dict.values()))
+print(list(my_dict.items()))
+print(my_dict.get(1)) # Coffee  
+print(my_dict.get(4)) # None
 
-    if num <= 0 or (num % 10 == 0):
-        return False
-    
-    reversed_num = 0
+print(my_dict.get(4, "alt if 4 not exists"))
 
-    while num > reversed_num:
-        reversed_num += reversed_num *10 + num % 10
-        num = num // 10
-    return num == reversed_num or num == reversed_num//10
+print("Hello", "World!", sep="***")
+print("Hello", "World", end="***")
 
-
-print(isPalindrome(121))
-print(isPalindrome(123454))
-print(isPalindrome(10))
