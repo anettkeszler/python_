@@ -87,7 +87,7 @@ print(two_sum_sorted_array_two_pointers(numbers = [-1, 0], target = -1)) # [1,2]
 
 
 ## Solution 3.2. - refactor
-def two_sum_sorted_array_two_pointers(numbers: List[int], target: int):
+def two_sum_sorted_array_two_pointers2(numbers: List[int], target: int):
     left = 0
     right = len(numbers) -1
     
@@ -101,5 +101,10 @@ def two_sum_sorted_array_two_pointers(numbers: List[int], target: int):
             left += 1
     return []
 
-
+# Summary 
+"""
+The two-pointer technique leverages the fact that the input array is sorted to eliminate the number of pairs we consider from O(n2)down to O(n).
+The two-pointers start at opposite ends of the array, and represent the pair of numbers we are currently considering.
+We repeatedly compare the sum of the current pair to the target, and move a pointer in a way that eliminates unnecessary pairs from our search.
+"""
 
