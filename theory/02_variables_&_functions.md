@@ -54,3 +54,46 @@ print(10 + 10.0)    # 20.0
 
 print(type(10 + 10.0)) # <class 'float'> , implicit type conversion
 ```
+
+### VARIABLE SCOPES
+- built-in
+- global
+- local
+- enclosed
+
+```python
+global_variable = 10
+
+def func_1():
+    enclosed_variable = 8
+    def func_2():
+    
+        local_variable = 5
+        print(f"Access to global variable: {global_variable}")
+        print(f"Access to eclosed variable: {enclosed_variable}")
+
+    func_2()
+
+print(func_1())
+
+
+# animalfarm
+print("Animalfarm:")
+def d():
+    animal = "elephant"
+    def e():
+        nonlocal animal
+        animal = "giraffe"
+        print(f"Inside nested function: {animal}")
+
+    print(f"Before calling function: {animal}")
+    e()
+    print(f"After nested function: {animal}")
+
+animal = "camel"
+d()
+print(f"Global animal: {animal}")
+
+# The nonlocal keyword is used to work with variables inside nested functions, 
+# where the variable should not belong to the inner function.
+```

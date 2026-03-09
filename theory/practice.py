@@ -33,3 +33,27 @@ print(my_dict.get(4, "alt if 4 not exists"))
 print("Hello", "World!", sep="***")
 print("Hello", "World", end="***")
 
+
+print()
+favorites = ["Banana", "Tiramisu", "Apple", "Chocolate cake"]
+
+# 'break' will exit the loop when the given condition is met
+for dessert in favorites:
+    if dessert == "Apple":
+        print(f"This is my favorite dessert: {dessert}")
+        break 
+
+
+#
+import time
+def sum_of_n_(n):
+    start = time.time()
+
+    the_sum = 0
+    for i in range(1, n + 1):
+        the_sum += i
+
+    end = time.time()
+    return the_sum, end - start, 2
+
+print(sum_of_n_(10))

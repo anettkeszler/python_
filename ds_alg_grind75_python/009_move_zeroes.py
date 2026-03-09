@@ -23,6 +23,7 @@ def move_zeroes_twopointer(nums: List[int]):
 a_list = [0,1,0,3,12]
 move_zeroes_twopointer(a_list) # [1,3,12,0,0]
 print(a_list)
+
 b_list = [0]
 move_zeroes_twopointer(b_list)
 print(b_list)

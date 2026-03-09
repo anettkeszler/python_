@@ -33,7 +33,7 @@ Python cheatsheet
     - Two Pointers Pattern:
         - 283.Move Zeroes - easy
         - 27.Remove Element - easy
-        - 75.Sort Colors - medium
+        - 88.Merge Sorted Array - easy
     - theory: 
         - hellointerview - (Two pointers - Sort Colors, Move Zeroes)
         - runstone academy - Input and Output
@@ -41,7 +41,12 @@ Python cheatsheet
     - Two Pointers Pattern:
         - 11.Container 
         - 15.3Sum 
+        - 75.Sort Colors - medium
         - (611.Valid Triangle Number )
     - theory: 
         - hellointerview - (finish Two Pointers Pattern)
-        - runstone academy
+        - runstone academy - Control flows
+
+    #### Week 2
+    - Monday: revisit 10 LeetCode problems (with Two pointers and others)
+

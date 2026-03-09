@@ -74,3 +74,15 @@ Different ways to run Python code:
 
 3. **Run a Python file in Interactive mode**:<br>
 ```python3 -i hello.py```
+
+### Virtual environments
+- Use venvs to isolate project packages from the system-wide Python packages
+- Create virtual environment:
+```
+python -m venv .venv
+```
+- activate virtual environment (mac):
+```
+source .venv/bin/activate
+```
+
