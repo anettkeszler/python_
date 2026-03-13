@@ -15,14 +15,28 @@ Output: 1
 Explanation: The longest palindrome that can be built is "a", whose length is 1.
 
 """
+from collections import defaultdict
 
-def longestPalindrom(input_string):
+def longestPalindrom(input_str):
+    counts = 0
+    char_counts = defaultdict(int)
 
-    counts = {}
-    for char in input_string:
-        counts[char] = counts.get(char, 0) + 1
+    # count how many times each character appears - dictionary
+    for char in input_str:
+        char_counts[char] += 1
 
-    print(counts)
+    # count how many pairs of characters we have
+    for value in char_counts.values():
+        if value % 2 == 0:
+            counts += value
+        else:
+            counts += (value-1)
+    
+    # if there are letters leftovers, use one for the middle
+    if counts < len(input_str):
+        counts+=1
+
+    return counts 
 
    
 print(longestPalindrom("abccccdd")) # 7 (dccaccd)
