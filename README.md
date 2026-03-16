@@ -47,6 +47,23 @@ Python cheatsheet
         - hellointerview - (finish Two Pointers Pattern)
         - runstone academy - Control flows
 
-    #### Week 2
-    - Monday: revisit 10 LeetCode problems (with Two pointers and others)
+#### Week 2
+- Monday: revisit 10 LeetCode problems (with Two pointers and others)
+
+#### Week3 
+- Monday: 
+    - DONE Cracking The Toding Tnterview : Big O examples - first 7-8 questions
+    - DONE Runstone Performance analysis + Exercises
+    - 2 leetcode problems
+    - CV: hellointerview, behavioural YT videok 
+        https://www.youtube.com/watch?v=bBvPQZmPXwQ&list=PL5q3E8eRUieUwRxPDt_JkpFI407PyXZth&index=4
+
+        https://www.youtube.com/watch?v=CAda15Tawlg&list=PL5q3E8eRUieUwRxPDt_JkpFI407PyXZth&index=1
+     
+- Tuesday 
+    - BiogO Theroy in the CTCI 
+    - 2 leetcode problems 
+    - Basic DS - Stack
+    - CV: 
+
 

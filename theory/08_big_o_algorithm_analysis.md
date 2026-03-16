@@ -119,7 +119,82 @@ def create_list4():
 - Big O Efficiency of Python List Operators:
 ![alt text](/screenshots/biogo_lists.png)
 
+### Performance of Dictionaries
+- you can access items by a key rather than a position (vs. lists)
+- ```get item``` and ```set item``` operations are O(1).
+- contains operation: O(1) (checking wether a key is in a dictionary or not) 
 
+![alt text](/screenshots/bigo_dictionaries.png)
 
+### Exercises with explanations:
+
+**1.) Example**: 
+- the outer loop runs **n times**
+- for each iteration of the outer loop, the inner loop also runs **n times**
+- the statement ```k = 2 + 2``` is a **constant time operation --> O(1)**
+- total: **O(n²) (quadratic time)**
+```
+for i in range(n):
+   for j in range(n):
+      k = 2 + 2
+```
+**2.) Example**:
+    - total: **O(n×1)=O(n)** 
+```
+for i in range(n):
+     k = 2 + 2
+```
+**3.) Example**:
+- Each iteration divides i by 2 --> So the number of iterations is the number of times you can divide n by 2 until it reaches 0.
+- k = 2 + 2 is O(1) (constant time)
+- total: **O(logn)×O(1)=O(logn)**
+- Every step cuts the problem in half, which is the hallmark of logarithmic algorithms (similar to binary search).
+```
+i = n
+while i > 0:
+    k = 2 + 2
+    i = i // 2
+```
+**4.) Example**:
+- Each loop runs **n times** and performs a **constant-time operation k = 2 + 2**.
+- First loop → O(n)
+- Second loop → O(n)
+- Third loop → O(n)
+- Since the **loops are sequential** (not nested), we add their costs:
+- total: **O(n)+O(n)+O(n)=O(3n) **
+- Big-O ignores constant factors: **O(n)**
+```
+for i in range(n):
+   k = 2 + 2
+for j in range(n):
+   k = 2 + 2
+for k in range(n):
+   k = 2 + 2
+```
+5.) **Example: Devise an experiment to verify that the list index operator is O(1)**.
+- Expected Result: 
+        - The time should stay roughly constant even as n increases.
+        - This shows the operation does not depend on the list size.
+```
+import time
+
+sizes = [1000, 10000, 100000, 1000000]
+repetitions = 1000000
+
+for n in sizes:
+    lst = list(range(n))
+
+    start = time.time()
+    
+    for _ in range(repetitions):
+        x = lst[n//2]   # index access
+    
+    end = time.time()
+
+    print(f"n={n}, time={end-start}")
+```
+
+### Cracking The Coding Interview - Big O Examples
+1.) O(n) 
 
 
