@@ -13,5 +13,9 @@ https://www.hellointerview.com/learn/code
 - it reduce O(n2) to O(n) by using 2 indices moving towards each other
 - this technique is ideal for avoiding nested loops, reducing time complexity to linear.
 
+### 2. Sliding Window Pattern
+- **LeetCode Sliding Window Pattern Collection**: 
+- 
+
 
        
