@@ -3,7 +3,7 @@
 ### Variables
 - To create a variable you need to declare a name and assign it a value  
 - To change the value of a variable that has already been declared, you only need to reassign or redeclare it 
-- In general, the right-hand side of the assignment statement is evaluated and a reference to the resulting data object is assigned to the name on the left-hand side.
+- In general, the right-hand side of the assignment statement is evaluated and a reference to the resulting data object is assigned to the name on the left-hand side
 - **Naming conventions**:
     - **camelCase**: first letter is lowercase, and the first letter of every world after is uppercase with no space between words (myFirstName) 
     - **snake_case**: everything is lowercase, but use an underscore between words (my_first_name)
@@ -32,7 +32,7 @@ flaws = None    # None type
 - **implicit data type conversion**: 
     - is automatical by Python's compiler to prevent data loss (int --> float). 
     - it only works if the data types are compatible (int - float). 
-    - similar termes in other languages: type inference, type coercion, type casting
+    - similar terms in other languages: type inference, type coercion, type casting
 - **explicit data type conversion**: when implicit conversion throws a type error (TypeError)
     - int('55') --> 55
     - str(45) --> '45', it converts **any data type** into a string datatype
