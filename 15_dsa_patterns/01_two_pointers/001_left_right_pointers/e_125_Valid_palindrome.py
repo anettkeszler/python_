@@ -41,6 +41,7 @@ print(is_palindrome("A man, a plan, a canal: Panama")) # True
 print(is_palindrome("race a car")) # False
 print(is_palindrome(" ")) # True
 
+
 def is_palindrome2(s: str):
     start, end = 0, len(s)-1
 
@@ -54,13 +55,13 @@ def is_palindrome2(s: str):
             return False
         start += 1
         end -= 1
-        
+
     return True
 
- 
 print(is_palindrome2("A man, a plan, a canal: Panama")) # True
 print(is_palindrome2("race a car")) # False
 print(is_palindrome2(" ")) # True
+
 
 """
 # how to filter alphanumerical characters in a string: 

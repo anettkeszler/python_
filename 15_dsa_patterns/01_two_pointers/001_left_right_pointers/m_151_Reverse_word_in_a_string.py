@@ -23,8 +23,8 @@ Input: s = "a good   example"
 Output: "example good a"
 Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string. 
 """
-def reverse_word_in_a_string(input: str):
 
+def reverse_word_in_a_string(input: str):
     input = input.split()
 
     start, end = 0, len(input)-1
@@ -33,7 +33,6 @@ def reverse_word_in_a_string(input: str):
         start+=1
         end-=1
     return " ".join(input)
-
 
 print(reverse_word_in_a_string("the sky is blue")) #  "blue is sky the"
 print(reverse_word_in_a_string("  hello world  ")) # "world hello"
