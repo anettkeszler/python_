@@ -2,7 +2,7 @@
 
 ## What is Algoritm?
 - Algorithm is a generic, step-by-step list of instructions for solving a problem (given an input, the algorithm produces the desired output/result)
-- refactoring an algoritm is a standard part of the software development cyclem, to making it faster or to perform better
+- refactoring an algoritm is a standard part of the software development cycle, to making it faster or to perform better
 
 ### Algorithm Analysis
 - an algorithm can be measured by **space**(how much memory it uses) and **time** (**execution time or running time**, how long it takes to run the code).<br>
@@ -23,7 +23,6 @@ def sum_of_n_(n):
     end = time.time()
     return the_sum, end - start
 ```
-
 ## Big O Notation
 - In terms of execution time, it is important to quantify the number of operations or steps that the algorithm will require. 
 - When solving algorithms, we need to characterize their performance in terms of **best-case**, **worst-case**, or **average-case performance**. 
@@ -82,7 +81,7 @@ for i in range(n):
 for j in range(n):
    test = test - 1
 ```
-#### Example 4: O(log n) - The value of i is cut in half each time through the loop so it will only take log n iterations.
+#### Example 3: O(log n) - The value of i is cut in half each time through the loop so it will only take log n iterations.
 ```python
 i = n
 while i > 0:
@@ -94,7 +93,7 @@ while i > 0:
 - the most common operations on lists are **indexing** and **assigning to an index position**. Both operations'performances are **O(1)**, no matter how large the list becomes.  
 - another very common programming task is to grow a list:
     - **append() method - O(1)**
-    - **concatenation - O(k) - k is the size of the list of concatenate**
+    - **concatenation - O(k) - k is the size of the list that is being concatenated**
     - **pop(0) - O(n)** -removing the first element
     - **pop() - O(1)** - removing the last element 
 - creating list in different ways:
@@ -127,7 +126,6 @@ def create_list4():
 ![alt text](/screenshots/bigo_dictionaries.png)
 
 ### Exercises with explanations:
-
 **1.) Example**: 
 - the outer loop runs **n times**
 - for each iteration of the outer loop, the inner loop also runs **n times**
@@ -194,7 +192,5 @@ for n in sizes:
     print(f"n={n}, time={end-start}")
 ```
 
-### Cracking The Coding Interview - Big O Examples
-1.) O(n) 
 
 
